@@ -68,17 +68,17 @@ profileContent.innerHTML=`
     <img class="img_profile" src="./IMG/fel3.jpg" alt="" srcset="">
     <div class="text_aboutme">
         <h2>
-        quien soy 
+        Quién soy 
         </h2>
 
-        <h1>
+        <h1 class="aboutme">
         Sobre mí
         </h1>
         <p>
-            Soy un biólogo Colombiano, que vine a Argentina con el fin de realizar una maestria en la UBA en conservación de la biodiversidad, despues de terminar la maestría me enamore de Argentina y decidí quedarme, mis primeras aproximaciones al mundo de la programación iniciaron en mis tesis de pregrado cuando empece a trabajar con Sistemas de Información Cartográficos (SIG), donde aprendí R studio para realizar mapas de ecosistemas y manejar bases de datos, tiempo despues me motive a hacer un curso de programación Frontend en Coder House porque tambien siempre me gusto el diseño y la fotografía, al terminar la carrera en Coder House me di cuenta de mi pasión por programar y desarrollar paginas web que brinden experiencias únicas a sus usuarios. puedes ver algunos de mis proyectos en las sección de <B>proyectos</B>.
+        Soy un biólogo colombiano que vino a Argentina con el objetivo de realizar una maestría en conservación de la biodiversidad en la UBA. Después de completar la maestría, me enamoré de Argentina y decidí quedarme. Mi primer acercamiento al mundo de la programación se dio durante mi tesis de pregrado, cuando comencé a trabajar con Sistemas de Información Cartográficos (SIG) y aprendí a usar R Studio para crear mapas de ecosistemas y manejar bases de datos. Luego empecé a estudiar programación Frontend y  descubrí mi pasión por la programación y el desarrollo de páginas web que ofrecen experiencias únicas a los usuarios. Puedes ver algunos de mis proyectos en la sección de proyectos.
         </p>
         <p>
-            Como pueden darse cuenta soy una persona que esta en una busqueda constante de conocimiento, me encanta aprender cosas nuevas y en la gran mayoria de mi vida he sido autodidacta, aprendiendo nuevas tecnologias y herramientas que mejoren mis habilidades y me hagan desarrollar más como profesional.
+        Como puedes notar, soy una persona que está constantemente en busca de conocimiento. Me encanta aprender cosas nuevas y, en gran parte de mi vida, he sido autodidacta, aprendiendo nuevas tecnologías y herramientas para mejorar mis habilidades y desarrollarme más como profesional.
         </p>
         <p>
             si quieren saber más de mi, no duden en <B>contactarse </B>conmigo.
