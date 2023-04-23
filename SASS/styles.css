@@ -464,7 +464,7 @@ body {
   }
   .Profile_container {
     flex-direction: column;
-    top: 550px;
+    top: 130vh;
   }
   .img_profile {
     width: 180px;
@@ -485,12 +485,14 @@ body {
     width: 15%;
   }
   .tittle_tools {
-    top: 1150px;
+    top: 260vh;
+    justify-content: center;
+    left: 20vw;
   }
   .container_tools {
     flex-direction: column;
     left: 0;
-    top: 1200px;
+    top: 270vh;
     gap: 30px;
   }
   .container_tools h1 {
@@ -526,7 +528,7 @@ body {
   }
   .proyectos_artes {
     position: relative;
-    top: 1200px;
+    top: 275vh;
   }
   .proyectos_artes h1::before {
     top: 15vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
@@ -536,7 +538,6 @@ body {
   }
   .proyectos_artes .video {
     flex-direction: column;
-    width: auto;
   }
   .proyectos_artes .video p {
     justify-content: center;
@@ -545,10 +546,11 @@ body {
     height: auto;
   }
   .art_photo_text {
-    top: 1250px;
+    top: 280vh;
+    left: 15vw;
   }
   .ig {
-    top: 1850px;
+    top: 430vh;
     flex-direction: column;
     width: 200px;
     justify-content: center;

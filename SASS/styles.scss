@@ -483,7 +483,7 @@ body {
     }
     .Profile_container {
         flex-direction: column;
-        top: 550px;
+        top: 130vh;
         
     }
     .img_profile{
@@ -507,12 +507,14 @@ body {
         
     }
     .tittle_tools{
-        top: 1150px;
+        top: 260vh;
+        justify-content: center;
+        left: 20vw;
     }
     .container_tools{
         flex-direction: column;
         left: 0;
-        top: 1200px;
+        top: 270vh;
         gap: 30px;
         h1{
             color: rgb(15, 128, 227);
@@ -551,7 +553,7 @@ body {
     }
     .proyectos_artes{
         position: relative;
-        top: 1200px;
+        top: 275vh;
         h1::before{
             
             top:  15vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
@@ -561,7 +563,7 @@ body {
         }
         .video{
         flex-direction: column;
-        width: auto;
+        
         p{
             justify-content: center;
             align-items: center;
@@ -571,10 +573,11 @@ body {
         }
     }
     .art_photo_text{
-        top: 1250px;
+        top: 280vh;
+        left: 15vw;
     }
     .ig{
-        top: 1850px;
+        top: 430vh;
         flex-direction: column;
         width: 200px;
         justify-content: center;
