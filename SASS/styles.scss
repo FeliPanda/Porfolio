@@ -15,19 +15,18 @@
     z-index: 2;
     
     h2{
-        // color: rgb(216, 120, 2);
         color: rgb(135, 206, 250);
         font-family: 'Ubuntu Mono', monospace;
-        font-size: 20px;
-        padding-bottom: 10px;
+        font-size: 2.5vw;
+        padding-bottom: 1vw;
         
     }
     h1{
         color: rgb(30, 144, 255);
         // font-family: 'Space Grotesk', sans-serif;
         font-family: 'Chivo Mono', monospace;
-        padding-bottom: 5px;
-        font-size: 45px;
+        padding-bottom: 0.5vw;
+        font-size: 3.4vw;
         background: linear-gradient(#1497be, #1c2aec);
         color: transparent;
         background-clip: text;
@@ -64,10 +63,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 200px;
+    height: 20vw;
     z-index: 5;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 23px;
+    font-size: 1.4375rem;
     line-height: 40px;
     color: rgb(184, 228, 255);
     
@@ -195,53 +194,7 @@ body {
     83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-//background lightning bubbles
 
-
-// .container_bg{
-//     position: relative;
-//     width: 100%;
-//     height: 100vh;
-//     overflow: hidden;
-    
-//     .bubbles{
-//         position: relative;
-//         display:flex;
-        
-//         span{
-//             position: relative;
-//             width: 10px;
-//             height: 10px;
-//             background:#4fc3dc;
-//             margin: 0 4px;
-//             border-radius: 50%;
-//             box-shadow:0 0 0 10px #4fc3dc44,
-//             0 0 50px #4fc3dc,
-//             0 0 100px #4fc3dc;
-//             animation: animate 15s linear infinite;
-//             animation-duration:calc(125s/ var(--i)) ;
-//         }
-//     }
-// }
-
-// .bubbles span:nth-child(even){
-//     background: #f8a604;
-//     box-shadow:0 0 0 10px #5c390244,
-//     0 0 50px #f8a604,
-//     0 0 100px #f8a604;
-// }
-
-
-// @keyframes animate{
-//     0%{
-//         transform: translateY(100vh) scale(0);
-//     }
-//     100%{
-//         transform: translateY(-10vh) scale(1);
-//     }
-// }
-
-//doing buttons for dw cv and contact
 
 .buttons {
     button{
@@ -252,7 +205,7 @@ body {
         // background: #3462fa;
         background: #282b34;
 
-        // margin: 10px 10px 10px 10px;
+        
         padding: 8px 20px 10px 20px;
         
         color: #baebf8;
@@ -265,9 +218,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 100vh; /* Ajusta la altura a tu necesidad */
     width: 100%;
-    margin: auto;
     position: absolute;
     top: 85%;
     left: 75%;
@@ -283,40 +234,36 @@ body {
 
 .text_aboutme{
     color: rgb(190, 224, 247);
-    width: 700px;
+    width: 50vw;
     text-align: justify;
     font-family: 'Exo 2', sans-serif;
-    padding-left: 40px;
+    padding-left: 4vw;
     
     h2{
-        font-size: 15px;
-        right: 10px;
+        font-size: 1.1em;
+        
         color: rgb(86, 156, 222);
         position: relative;
-        left: 15px;
+        left: 1vw;
         letter-spacing: 1px;
 
     }
     h1{
         color: rgb(15, 128, 227);
         letter-spacing: 1.5px;
-        padding-top: 5px;
-        padding-bottom: 20px;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
     }
     h1::before{
         content: ""; 
-        position: absolute; /* Establecer la posición absoluta con respecto al elemento padre (.texto-con-linea) */
-        bottom: 268px; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
-        left: 535px;
-        transform: translateY(-10px);
-        
+        position: absolute; 
+        top:  107vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+        left: 38vw;
         width: 6%;
         border-bottom: 3px solid rgb(65, 152, 229); 
     }
     p{
         color: rgb(142, 200, 252);
-
-        position: relative;
     }
     
 }
@@ -325,45 +272,51 @@ body {
 
 .social_media{
     display: flex;
-    width: 30%;
+    width: 20vw;
     position: relative;
     left: 45%;
-    top: 570px;
-    gap: 10px;
+    top: 35vw;
+    gap: 2vw;
     z-index: 3;
     
     a{
         text-decoration: none;
-        margin-right: 10px;
     }
 }
 
 //tools and skills
 
 .container_tools{
+    width: 80%; 
     display: flex;
     position: relative;
-    left:33%;
-    top: 1110px;
-    gap: 5%;
-    padding-left: 20px;
-    padding-bottom: 80px;
+    justify-content: center;
+    top: 164vh;
+    gap: 3%;
+    padding-bottom: 8vh;
+    padding-top: 2vh;
+    margin-left: 15vw;
     
     .tools{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-right: 20px;
+        // margin-right: 20px;
+        flex-direction: column;
         
     }
     .tools1{
+        display: flex;
         text-align: center;
         padding-top: 30px;
+        gap: 10px;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        
         
         button{
             background-color: #0717fa;
             border: none;
-            font-size: 20px;
+            font-size: 16px;
             font-family: 'Ubuntu', sans-serif;
             border-radius: 15px;
             background: #282b34;
@@ -376,11 +329,7 @@ body {
 
 
 
-//wrapper
 
-// .wrapper{
-//     height: 100%;
-// }
 
 .sticky-footer{
     position: fixed; 
@@ -419,3 +368,218 @@ body {
     z-index: 2; // Asegurarse de que las partículas estén en un nivel de apilamiento más alto
 }
 
+//tittles 
+.tittle_tools{
+    color: rgb(15, 128, 227);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 162vh;
+    margin-left: 8vw;
+
+}
+
+.proyectos_artes{
+    // color: rgb(15, 128, 227);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 8vw;
+    top: 160vh;
+    position: relative;
+    h2{
+        color: rgb(85, 151, 210);
+    }
+    h1{
+        color: rgb(15, 128, 227);
+    }
+    h1::before{
+        content: ""; 
+        position: absolute; 
+        top:  13vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+        left: 39vw;
+        width: 15%;
+        border-bottom: 3px solid rgb(65, 152, 229); 
+    }
+    .video{
+        z-index: 5;
+        padding-bottom: 10vh;
+        display: flex;
+        padding-top: 5vh;
+        p{
+            color: rgb(142, 200, 252);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            align-items: center;
+            background: #282b34;
+            border-radius: 15px;
+            height: 41vh;
+            width: 30vh;
+            top: 7vh;
+            position: relative;
+            
+            padding: 8px 20px 35px 20px;
+        }
+    }
+}
+
+.art_photo_text{
+    position: relative;
+    top: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: rgb(85, 151, 210);
+
+    
+}
+
+.ig{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    top: 170vh;
+    z-index: 5;
+    margin-bottom: 200vh;
+    // padding-bottom: 200px;
+    .holi{
+        padding-bottom: 30vh;
+    }
+    img{
+        border-radius: 10px;
+    }
+    
+    .ig_pick{
+        width: 180px;
+    }
+}
+
+
+// media querys 
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    .content {
+        width: 100%;
+    }
+    .social_media{
+        left: 38vw;
+        width: 10%;
+        top: 420px;
+    }
+    .Profile_container {
+        flex-direction: column;
+        top: 550px;
+        
+    }
+    .img_profile{
+        width: 180px;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+    .text_aboutme{
+        font-size: 16px;
+        width: auto;
+        padding-right: 15px;
+        top: 100px;
+        margin-left: 5px;
+        padding-left: 15px;
+        h1::before{
+        left: 40px;
+        bottom:425px ;
+        width: 15%;
+        }
+
+        
+    }
+    .tittle_tools{
+        top: 1150px;
+    }
+    .container_tools{
+        flex-direction: column;
+        left: 0;
+        top: 1200px;
+        gap: 30px;
+        h1{
+            color: rgb(15, 128, 227);
+            letter-spacing: 1.5px;
+            justify-content: center;
+            text-align: center;
+            font-family: "Exo 2", sans-serif;
+            font-size: 1.5em;
+        }
+        h2{
+            font-size: 15px;
+            right: 10px;
+            color: rgb(86, 156, 222);
+            position: relative;
+            left: 15px;
+            letter-spacing: 1px;
+            justify-content: center;
+            text-align: center;
+            padding-right: 20px;
+            
+        }
+        .tools{
+            img{
+                width: 100px;
+                height: auto;
+            }
+            .tools1{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                button{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .proyectos_artes{
+        position: relative;
+        top: 1200px;
+        h1::before{
+            
+            top:  15vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+            left: 29vw;
+            width: 45%;
+            border-bottom: 3px solid rgb(65, 152, 229); 
+        }
+        .video{
+        flex-direction: column;
+        width: auto;
+        p{
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            }
+        }
+    }
+    .art_photo_text{
+        top: 1250px;
+    }
+    .ig{
+        top: 1850px;
+        flex-direction: column;
+        width: 200px;
+        justify-content: center;
+        // align-items: center;
+        left: 150px;
+        padding-bottom: 900px;
+    }
+}

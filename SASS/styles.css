@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Exo+2&family=Lato:ital@0;1&family=Open+Sans:wght@300&family=Raleway&family=Space+Grotesk:wght@500&family=Ubuntu+Mono&family=Ubuntu:wght@700&display=swap");
 * {
   margin: 0;
@@ -16,14 +15,14 @@
 .text h2 {
   color: rgb(135, 206, 250);
   font-family: "Ubuntu Mono", monospace;
-  font-size: 20px;
-  padding-bottom: 10px;
+  font-size: 2.5vw;
+  padding-bottom: 1vw;
 }
 .text h1 {
   color: rgb(30, 144, 255);
   font-family: "Chivo Mono", monospace;
-  padding-bottom: 5px;
-  font-size: 45px;
+  padding-bottom: 0.5vw;
+  font-size: 3.4vw;
   background: linear-gradient(#1497be, #1c2aec);
   color: transparent;
   background-clip: text;
@@ -51,10 +50,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
+  height: 20vw;
   z-index: 5;
   font-family: "Ubuntu Mono", monospace;
-  font-size: 23px;
+  font-size: 1.4375rem;
   line-height: 40px;
   color: rgb(184, 228, 255);
 }
@@ -241,7 +240,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: auto;
   position: absolute;
   top: 85%;
   left: 75%;
@@ -257,76 +255,75 @@ body {
 
 .text_aboutme {
   color: rgb(190, 224, 247);
-  width: 700px;
+  width: 50vw;
   text-align: justify;
   font-family: "Exo 2", sans-serif;
-  padding-left: 40px;
+  padding-left: 4vw;
 }
 .text_aboutme h2 {
-  font-size: 15px;
-  right: 10px;
+  font-size: 1.1em;
   color: rgb(86, 156, 222);
   position: relative;
-  left: 15px;
+  left: 1vw;
   letter-spacing: 1px;
 }
 .text_aboutme h1 {
   color: rgb(15, 128, 227);
   letter-spacing: 1.5px;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }
 .text_aboutme h1::before {
   content: "";
-  position: absolute; /* Establecer la posición absoluta con respecto al elemento padre (.texto-con-linea) */
-  bottom: 268px; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
-  left: 535px;
-  transform: translateY(-10px);
+  position: absolute;
+  top: 107vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+  left: 38vw;
   width: 6%;
   border-bottom: 3px solid rgb(65, 152, 229);
 }
 .text_aboutme p {
   color: rgb(142, 200, 252);
-  position: relative;
 }
 
 .social_media {
   display: flex;
-  width: 30%;
+  width: 20vw;
   position: relative;
   left: 45%;
-  top: 570px;
-  gap: 10px;
+  top: 35vw;
+  gap: 2vw;
   z-index: 3;
 }
 .social_media a {
   text-decoration: none;
-  margin-right: 10px;
 }
 
 .container_tools {
+  width: 80%;
   display: flex;
   position: relative;
-  left: 33%;
-  top: 1110px;
-  gap: 5%;
-  padding-left: 20px;
-  padding-bottom: 80px;
+  justify-content: center;
+  top: 164vh;
+  gap: 3%;
+  padding-bottom: 8vh;
+  padding-top: 2vh;
+  margin-left: 15vw;
 }
 .container_tools .tools {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  flex-direction: column;
 }
 .container_tools .tools1 {
+  display: flex;
   text-align: center;
   padding-top: 30px;
+  gap: 10px;
 }
 .container_tools .tools1 button {
   background-color: #0717fa;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Ubuntu", sans-serif;
   border-radius: 15px;
   background: #282b34;
@@ -366,6 +363,198 @@ body {
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+
+.tittle_tools {
+  color: rgb(15, 128, 227);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 162vh;
+  margin-left: 8vw;
+}
+
+.proyectos_artes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 8vw;
+  top: 160vh;
+  position: relative;
+}
+.proyectos_artes h2 {
+  color: rgb(85, 151, 210);
+}
+.proyectos_artes h1 {
+  color: rgb(15, 128, 227);
+}
+.proyectos_artes h1::before {
+  content: "";
+  position: absolute;
+  top: 13vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+  left: 39vw;
+  width: 15%;
+  border-bottom: 3px solid rgb(65, 152, 229);
+}
+.proyectos_artes .video {
+  z-index: 5;
+  padding-bottom: 10vh;
+  display: flex;
+  padding-top: 5vh;
+}
+.proyectos_artes .video p {
+  color: rgb(142, 200, 252);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+  background: #282b34;
+  border-radius: 15px;
+  height: 41vh;
+  width: 30vh;
+  top: 7vh;
+  position: relative;
+  padding: 8px 20px 35px 20px;
+}
+
+.art_photo_text {
+  position: relative;
+  top: 160vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgb(85, 151, 210);
+}
+
+.ig {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  top: 170vh;
+  z-index: 5;
+  margin-bottom: 200vh;
+}
+.ig .holi {
+  padding-bottom: 30vh;
+}
+.ig img {
+  border-radius: 10px;
+}
+.ig .ig_pick {
+  width: 180px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
+  .social_media {
+    left: 38vw;
+    width: 10%;
+    top: 420px;
+  }
+  .Profile_container {
+    flex-direction: column;
+    top: 550px;
+  }
+  .img_profile {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  .text_aboutme {
+    font-size: 16px;
+    width: auto;
+    padding-right: 15px;
+    top: 100px;
+    margin-left: 5px;
+    padding-left: 15px;
+  }
+  .text_aboutme h1::before {
+    left: 40px;
+    bottom: 425px;
+    width: 15%;
+  }
+  .tittle_tools {
+    top: 1150px;
+  }
+  .container_tools {
+    flex-direction: column;
+    left: 0;
+    top: 1200px;
+    gap: 30px;
+  }
+  .container_tools h1 {
+    color: rgb(15, 128, 227);
+    letter-spacing: 1.5px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5em;
+  }
+  .container_tools h2 {
+    font-size: 15px;
+    right: 10px;
+    color: rgb(86, 156, 222);
+    position: relative;
+    left: 15px;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+    padding-right: 20px;
+  }
+  .container_tools .tools img {
+    width: 100px;
+    height: auto;
+  }
+  .container_tools .tools .tools1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container_tools .tools .tools1 button {
+    font-size: 15px;
+  }
+  .proyectos_artes {
+    position: relative;
+    top: 1200px;
+  }
+  .proyectos_artes h1::before {
+    top: 15vh; /* Alinear el pseudo-elemento en la parte inferior del elemento padre */
+    left: 29vw;
+    width: 45%;
+    border-bottom: 3px solid rgb(65, 152, 229);
+  }
+  .proyectos_artes .video {
+    flex-direction: column;
+    width: auto;
+  }
+  .proyectos_artes .video p {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .art_photo_text {
+    top: 1250px;
+  }
+  .ig {
+    top: 1850px;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    left: 150px;
+    padding-bottom: 900px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
