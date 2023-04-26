@@ -390,6 +390,7 @@ body {
     margin-left: 8vw;
     top: 160vh;
     position: relative;
+    
     h2{
         color: rgb(85, 151, 210);
     }
@@ -415,15 +416,40 @@ body {
             align-items: center;
             background: #282b34;
             border-radius: 15px;
-            height: 41vh;
-            width: 30vh;
-            top: 7vh;
+            height: 30vh;
+            width: 36vh;
+            top: 10vh;
             position: relative;
-            
             padding: 8px 20px 35px 20px;
+            // margin-bottom: 100vh;
+            
+        }
+        button{
+            background-color: #0717fa;
+            border: none;
+            font-size: 16px;
+            font-family: 'Ubuntu', sans-serif;
+            border-radius: 15px;
+            background: #282b34;
+            
+            padding: 8px 20px 10px 20px;
+            color: #04e2ab; 
+            z-index: 5;
+            cursor: pointer;
+            
         }
     }
 }
+
+.text_button{
+    display: flex;
+    flex-direction: column;
+    gap: 12vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .art_photo_text{
     position: relative;
@@ -436,28 +462,108 @@ body {
 
     
 }
+.ig_container{
 
-.ig{
+    .ig_images{
+        display: flex;
+        height: 300px;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+        position: relative;
+        top: 170vh;
+        z-index: 5;
+        margin-bottom: 200vh;
+
+        img{
+            border-radius: 10px;
+        }
+        
+        .ig_pick{
+            width: 180px;
+        }
+    }
+    .button_insta{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+        
+        button{
+            background-color: #0717fa;
+            border: none;
+            font-size: 16px;
+            font-family: 'Ubuntu', sans-serif;
+            border-radius: 15px;
+            background: #282b34;
+            
+            padding: 8px 20px 10px 20px;
+            color: #04e2ab; 
+            z-index: 8;
+            cursor: pointer;
+            position: relative;
+            bottom: 20vh;
+            
+        }
+    }
+}
+
+// change page language
+
+.navbar{
+    z-index: 8;
     display: flex;
-    height: 300px;
-    width: 100%;
-    gap: 30px;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.centered{
+    text-align: center;
+}
+.flag{
     justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+}
+
+.en{
+    color: #e75a14;
+}
+.es{
+    color: #00a1ff;
+}
+.check{
     position: relative;
-    top: 170vh;
-    z-index: 5;
-    margin-bottom: 200vh;
-    // padding-bottom: 200px;
-    .holi{
-        padding-bottom: 30vh;
-    }
-    img{
-        border-radius: 10px;
-    }
-    
-    .ig_pick{
-        width: 180px;
-    }
+    width: 50px;
+    z-index: 10;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+
+}
+.check:checked:before{
+    background: #00a1ff;
 }
 
 

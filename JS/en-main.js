@@ -2,8 +2,7 @@
 const mainContent = document.getElementById("main_content");
 const container = document.querySelector('.bubbles');
 const mainText = document.createElement("div");
-
-
+const iValues = [11, 12, 24, 10, 14, 23, 18, 16, 19, 20, 22, 25, 18, 21, 15, 13, 26, 17, 28, 12, 24, 10, 14, 23, 18, 16, 19, 20, 22, 25, 18, 21, 15, 13, 26, 17, 28, 12, 24, 10, 14, 23, 18, 16, 19, 20, 22, 25, 18, 21, 15, 13, 26, 17,12, 24, 10, 14, 23, 18, 16,11, 12, 24, 10, 14, 23, 18, 16, 19, 20, 22, 21, 15, 13, 26, 17, 28, 12, 24, 10, 14, 23,];
 mainText.className = "name";
 mainText.innerHTML = `
     <div class="content">
@@ -13,27 +12,31 @@ mainText.innerHTML = `
             </p>
             
             <ul class="content__container__list">
-                <li class="content__container__list__item">mundo !</li>
-                <li class="content__container__list__item">usuarios !</li>
-                <li class="content__container__list__item">reclutadores !</li>
-                <li class="content__container__list__item">a todos !</li>
+                <li class="content__container__list__item">world !</li>
+                <li class="content__container__list__item">users !</li>
+                <li class="content__container__list__item">recruiters !</li>
+                <li class="content__container__list__item">everyone  !</li>
             </ul>
         </div>
         <div class="text"> 
             <h1> Felipe Vergara </h1>
-            <h2> Desarrollador Frontend </h2>
+            <h2> Frontend developer </h2>
             <div class= "buttons">
                 <button id="CV">
-                Descargar CV
+                download CV
                 <img src="../IMG/download2.png" alt="">
                 </button>
                 <button id="linkedin">
-                Contáctame
+                Contact me
                 <img src="../IMG/telegram2.png" alt="">
                 </button>
             </div>
         </div>
-        
+        <div class="container_bg"> 
+            <div class="bubbles">
+                ${iValues.map(i => `<span style="--i:${i};"></span>`).join('')}
+            </div>
+        </div>
     </div>
     `;
 mainContent.appendChild(mainText); 
@@ -65,22 +68,24 @@ profileContent.innerHTML=`
     <img class="img_profile" src="./IMG/fel3.jpg" alt="" srcset="">
     <div class="text_aboutme">
         <h2>
-        Quién soy 
+            Who I am
         </h2>
-
         <h1 class="aboutme">
-        Sobre mí
+            About Me
         </h1>
         <p>
-        Soy un biólogo colombiano que vino a Argentina con el objetivo de realizar una maestría en conservación de la biodiversidad en la UBA. Después de completar la maestría, me enamoré de Argentina y decidí quedarme. Mi primer acercamiento al mundo de la programación se dio durante mi tesis de pregrado, cuando comencé a trabajar con Sistemas de Información Cartográficos (SIG) y aprendí a usar R Studio para crear mapas de ecosistemas y manejar bases de datos. Luego empecé a estudiar programación Frontend y  descubrí mi pasión por la programación y el desarrollo de páginas web que ofrecen experiencias únicas a los usuarios. Puedes ver algunos de mis proyectos en la sección de proyectos.
+            I am a Colombian biologist who came to Argentina with the goal of pursuing a master's degree in biodiversity conservation at University of Buenos Aires (UBA). After completing my master's, I fell in love with Argentina and decided to stay. My first encounter with the world of programming was during my undergraduate thesis, where I started working with Geographic Information Systems (GIS) and learned to use R Studio to create ecosystem maps and manage databases. Later, I began studying Frontend programming and discovered my passion for programming and developing web pages that offer unique user experiences. You can see some of my projects in the projects section.
         </p>
         <p>
-        Como puedes notar, soy una persona que está constantemente en busca de conocimiento. Me encanta aprender cosas nuevas y, en gran parte de mi vida, he sido autodidacta, aprendiendo nuevas tecnologías y herramientas para mejorar mis habilidades y desarrollarme más como profesional.
+            As you can see, I am a person who is constantly seeking knowledge. I love learning new things, and for much of my life, I have been self-taught, learning new technologies and tools to improve my skills and further develop as a professional.
         </p>
         <p>
-            si quieren saber más de mi, no duden en <B>contactarse </B>conmigo.
+            If you want to know more about me, feel free to <b>contact me</b>.
         </p>
-    </div>´
+    </div>
+  
+        
+        ´
         
 `
 // profileContent.appendChild()
@@ -99,6 +104,7 @@ fetch('./JS/particlesjs-config.json')
 .catch(function(error) {
     console.error('Error al cargar la configuración de particles.js', error);
 });
+
 
 // changing lang
 
@@ -137,3 +143,5 @@ var currentUrl = window.location.href;
     document.head.appendChild(originalScript); // Agregar el JS original al head de la página cargada
     }
 });
+
+
